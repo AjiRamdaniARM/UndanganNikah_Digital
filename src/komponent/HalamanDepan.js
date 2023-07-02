@@ -19,7 +19,7 @@ const dataPoto1 = "https://cdn.popbela.com/content-images/post/20210312/13910009
 // jalankan perintah code 
     return(
         <div  className="HalamaDepan">
-             <div className="object1 container  absolute flex justify-end items-end lg:right-44 xl:-left-80">
+             <div className="object1 container  absolute flex justify-end items-end lg:right-44 xl:-left-80 ">
                 <img width={300}  src={Object1} alt="bunga1" />
             </div> 
             <center >
