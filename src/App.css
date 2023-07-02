@@ -17,6 +17,12 @@
   font-family: 'font1';
   src: url(komponent/font/font1.ttf);
 }
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url(komponent/font/Montserrat-Bold.ttf);
+  font-family: 'Montserrat';
+  src: url(komponent/font/Montserrat-VariableFont_wght.ttf);
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

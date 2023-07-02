@@ -3,10 +3,11 @@ import React from "react";
 import "./style/style.css";
 import PopMusic from "./popup_music";
 import Navbar from "./Navbar";
+import Header1 from "./Halaman/Header1";
 
 
 
-export const UndanganNikahan = () => {
+export const UndanganNikahan = (props) => {
     return(
         <motion.div 
         initial = {{ scaleY: 0}}
@@ -14,7 +15,8 @@ export const UndanganNikahan = () => {
         exit={{ scaleY: 0}}
         >
         <div className="Undangan-Nikahan HalamaDepan">
-            {/* <PopMusic /> */}
+            <Header1 />
+            {/* <PopMusic />  */}
             <Navbar />
         </div>
         </motion.div>

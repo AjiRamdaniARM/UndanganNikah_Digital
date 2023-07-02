@@ -1,19 +1,24 @@
-import React from "react";
+import React,{Component, useState} from "react";
 import { motion } from "framer-motion"
 import "./style/style.css";
 import "../App.css";
 import Object1 from "./image/object1.png";
 import Object2 from "./image/Object2.png";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import data from "./data.json";
+import { render } from "@testing-library/react";
 
-
-const HalamanDepan = () => {
 // data nama dan api poto online
-const namaLakilaki = "Aji";
-const namaPerempuan = "Freya";
-const namaTamu = "Anisa Rahmah";
-const namaKota = "Kota Sukabumi";
+
+// const namaLakilaki = "Aji";
+// const namaPerempuan = "Freya";
+// const namaTamu = "Anisa Rahmah";
+// const namaKota = "Kota Sukabumi";
 const dataPoto1 = "https://cdn.popbela.com/content-images/post/20210312/139100098-1380320869032981-610290125731563906-n-5feb75ea0165023f41286ddc635c30e1.jpg";
+
+
+
+
+export const HalamanDepan = () => {
 
 
 // jalankan perintah code 
@@ -34,25 +39,25 @@ const dataPoto1 = "https://cdn.popbela.com/content-images/post/20210312/13910009
       }}
             >
                 <div className="shape1 z-10">
-                    <img width="190px" className="image-poto m-0 shadow-md" src={dataPoto1}/>
-
-          
-                <div id="nama" className="nama flex justify-center items-center text-4xl p-10">
-                    <h2>{namaPerempuan}</h2>&nbsp;<text>&</text>&nbsp;
-                    <h2>{namaLakilaki}</h2>
-                </div>
-              
+                 <StylingImage />
+                 {data && data.map(({namaPerempuan, namaLakilaki}) => (
+                   <div className='nama flex justify-center items-center text-4xl p-10'>
+                <h2>{namaPerempuan} </h2>&nbsp;<h2>&</h2>&nbsp;
+                <h2>{namaLakilaki}</h2> 
+                    </div>
+                ))}
                 {/* data kedua  */}
-                <div className="Tujuan">
-                    <h6 className="p-3 font-serif">Kepada Bapak/Ibu/Saudara/i</h6>
-                    <h1 className="font-bold  text-3xl">{namaTamu}</h1>
-                    <h6 className=" text-1xl">{namaKota}</h6>
-                    {/* data default */}
-                    <p className="m-5 w-72">Kami Mengundang Anda untuk hadir di acara pernikahan kami.</p>
-                    <a href="/UndanganNikahan"  className="bg-white rounded-full w-44 h-11 flex items-center justify-center ">
-                        <img width="25" src="https://www.svgrepo.com/show/500617/message.svg" />&nbsp;
-                        Undangan Kami</a>
-                </div>
+                {data && data.map(({namaTamu,namaKota})=> (
+                      <div className="Tujuan">
+                      <h6 className="p-3 font-serif">Kepada Bapak/Ibu/Saudara/i</h6>
+                      <h1 className="font-bold  text-3xl">{namaTamu}</h1>
+                       <h6 className="text-1xl">{namaKota}</h6>
+                      <p className="m-5 w-72">Kami Mengundang Anda untuk hadir di acara pernikahan kami.</p>
+                      <a href="/UndanganNikahan"  className="bg-white rounded-full w-44 h-11 flex items-center justify-center ">
+                          <img width="25" src="https://www.svgrepo.com/show/500617/message.svg" />&nbsp;
+                          Undangan Kami</a>
+                  </div>
+                ))}
                 </div>
                 </motion.div>
             </center>
@@ -61,5 +66,17 @@ const dataPoto1 = "https://cdn.popbela.com/content-images/post/20210312/13910009
             </div>
         </div>
     )
+
 }
 export default HalamanDepan;
+
+
+export class StylingImage extends React.Component {
+    render() {
+        return(
+            <img width="190px" className="image-poto m-0 shadow-md" src={dataPoto1}/>
+        )
+    }
+}
+
+

@@ -4,13 +4,10 @@ import HalamanDepan from './komponent/HalamanDepan';
 import AnimatedRouter from './AnimatedRouter';
 
 
-
-
 function App() {
   return (
     <div className="App ">
       <React.Fragment>
-       
       <AnimatedRouter />
       </React.Fragment>
    
