@@ -29,7 +29,18 @@
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 50em;   
+    height: 46em;   
+}
+.Header3 { 
+    background-image: url("../image/bg1.jpg" );
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-position: center;
+    max-width: 768px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 46em;   
 }
 .shape1 {
     position: relative;
@@ -74,4 +85,26 @@ audio::-webkit-media-controls-mute-button
 }
 audio::-webkit-media-controls-panel {
     background-color: #ffffff;
+  }
+  .poto-laki {
+    background-image: url("../image/poto-nikah/laki.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+    background-position-x: -30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+
+  .poto-pr {
+    background-image: url("../image/poto-nikah/perempuan.jpg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: center;
+    background-position-x: -25px;
+    background-position-y: -20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
   }

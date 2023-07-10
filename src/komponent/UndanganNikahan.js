@@ -5,6 +5,7 @@ import PopMusic from "./popup_music";
 import Navbar from "./Navbar";
 import Header1 from "./Halaman/Header1";
 import Header2 from "./Halaman/Header2";
+import Header3 from "./Halaman/Header3";
 
 
 
@@ -18,7 +19,8 @@ export const UndanganNikahan = (props) => {
         <div className="Undangan-Nikahan">
             <Header1 />
             <Header2 />
-            <PopMusic />  
+            <Header3 />
+            {/* <PopMusic />   */}
             <Navbar />
         </div>
         </motion.div>

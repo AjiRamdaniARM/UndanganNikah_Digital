@@ -3,12 +3,14 @@ import { StylingImage } from '../HalamanDepan'
 import data from "../data.json";
 import loveCouple from "../image/loveCouple.png";
 
-const data2 = data.data2;
+
+const dataOrang = data.dataOrang;
+const dataL = data.dataL;
 
 class Header1 extends React.Component   {
     render() {
     return(
-        <div className='Header1  text-center block justify-center items-center z-10 w-full p-14 column'>
+        <div id='Home' className='Header1  text-center block justify-center items-center z-10 w-full p-14 column'>
             <div className='Text-Wedding  '>
                 <h3 style={styleWedding} className=''>THE WEDDING OF</h3>
             </div>
@@ -16,17 +18,19 @@ class Header1 extends React.Component   {
             <div className='Poto1 p-5'>
                 <StylingImage />
             </div>
-                {data2.map(({namaPerempuan, namaLakilaki}) => (
-                   <div className='nama  flex justify-center items-center text-4xl p-3'>
-                <h2>{namaPerempuan}</h2>&nbsp;<img width={50} src={loveCouple} />&nbsp;
-                 <h2>{namaLakilaki}</h2> 
-                    </div>
-                ))}
-            {data2 && data2.map((data2) => (
+            {dataOrang && dataOrang.map(({namaPerempuan,namaLakilaki}) => (
+                     <div className='nama  flex justify-center items-center text-4xl p-3'>
+                     <h2>{namaPerempuan}</h2>&nbsp;<img width={50} src={loveCouple} />&nbsp;
+                      <h2>{namaLakilaki}</h2> 
+                         </div>
+            ))}
+              
+              
+            {dataL && dataL.map(({deskripsi1,Deadline}) => (
             <div className='post p-5'>
-              <h2 style={{fontFamily: 'Montserrat-Bold', fontWeight: 'normal'}} className='title w-56  p-2 '>{data2.deskripsi1}</h2>
+              <h2 style={{fontFamily: 'Montserrat-Bold', fontWeight: 'normal'}} className='title w-56  p-2 '>{deskripsi1}</h2>
               <TimerDays />
-              <p style={{fontFamily: "Montserrat-Bold", fontWeight: "normal"}} className='content p-2'>{data2.Deadline}</p>
+              <p style={{fontFamily: "Montserrat-Bold", fontWeight: "normal"}} className='content p-2'>{Deadline}</p>
             </div>
           ))}
             </center>

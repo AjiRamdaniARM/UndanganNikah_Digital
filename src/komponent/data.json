@@ -1,19 +1,24 @@
 {
-    "data2" : [{
+    "dataOrang" : [{
             "id": "1",
             "namaLakilaki" : "Aji",
-            "namaPerempuan" : "Freya",
             "namaPanjangLaki" : "Aji Ramdani",
+            "namaBapakLaki" : "Erwin Prakasa",
+            "namaIbuLaki" : "Jesica",
+            "namaPerempuan" : "Freya",
             "namaPanjangPerempuan" : "Freya Jayawardana",
-            "namaBapakLaki" : "Asep Saepuloh",
-            "namaIbuLaki" : "Engkom",
             "namaBapakPr" : "Jaya Wardana",
-            "namaIbuPr" : "Nashifa",
+            "namaIbuPr" : "Nashifa"
+                }] ,
+        "dataL" : [{
+            "id": "3",
             "namaTamu": "Anisa Rahmah",
             "namaKota": "Sukabumi",
             "deskripsi1" : "Kami akan menikah,dan kami ingin Anda menjadi bagian dari hari istimewa kami!",
-            "Deadline" : "Minggu, 19 November 2027"
-                }]      
+            "Deadline" : "Minggu, 19 November 2027",
+            "Waktu" : "Pukul 09.00",
+            "LokasiAcara" : "Kp.Sampora Rt/rw: 03/06 Desa Bojong Raharja Kec Cikembar Kab Sukabumi"
+        }]    
     }
 
 

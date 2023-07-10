@@ -8,7 +8,8 @@ import data from "./data.json";
 
 const dataPoto1 = "https://cdn.popbela.com/content-images/post/20210312/139100098-1380320869032981-610290125731563906-n-5feb75ea0165023f41286ddc635c30e1.jpg";
 export const HalamanDepan = () => {
-    const data2 = data.data2;
+    const dataOrang = data.dataOrang;
+    const dataL = data.dataL;
 // jalankan perintah code 
     return(
         <div className="HalamaDepan">
@@ -28,14 +29,14 @@ export const HalamanDepan = () => {
             >
                 <div className="shape1 z-10">
                  <StylingImage />
-                 {data2 && data2.map(({namaPerempuan, namaLakilaki}) => (
+                 {dataOrang && dataOrang.map(({namaPerempuan, namaLakilaki}) => (
                    <div className='nama flex justify-center items-center text-4xl p-10'>
                 <h2>{namaPerempuan} </h2>&nbsp;<h2>&</h2>&nbsp;
                 <h2>{namaLakilaki}</h2> 
                     </div>
                 ))}
                 {/* data kedua  */}
-                {data2 && data2.map(({namaTamu,namaKota})=> (
+                {dataL && dataL.map(({namaTamu,namaKota})=> (
                       <div className="Tujuan">
                       <h6 className="p-3 font-serif">Kepada Bapak/Ibu/Saudara/i</h6>
                       <h1 className="font-bold  text-3xl">{namaTamu}</h1>
