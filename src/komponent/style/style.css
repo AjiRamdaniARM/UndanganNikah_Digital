@@ -1,3 +1,10 @@
+/* variable data css */
+:root {
+    --main-bg-11: url("https://i.pinimg.com/originals/15/17/d9/1517d9b125dc5f1fe6b5c434ca137d43.jpg");
+    --main-bg-1 : url("https://drive.google.com/uc?export=view&id=1rZZ3MbvJpy3A3m2RBd6Z_Px47yIb4aFr");
+    --main-bg-111 : url("https://drive.google.com/uc?export=view&id=1w4t-sCv7SK0HHUvXDyDDbvGsr0xUhgHV");
+}
+
 .HalamaDepan {
     background-image: url("../image/bg1.jpg" );
     background-repeat: no-repeat;
@@ -10,7 +17,7 @@
     height: 56em;   
 }
 .Header1 { 
-    background-image: url("../image/bg1.jpg" );
+    background-image: var(--main-bg-111);
     background-repeat: no-repeat;
     background-size: 100% 100% ;
     background-position: center;
@@ -21,7 +28,7 @@
     height: 50em;   
 }
 .Header2 { 
-    background-image: url("../image/bg1.jpg" );
+    background-image: var(--main-bg-1);
     background-repeat: no-repeat;
     background-size: 100% 100% ;
     background-position: center;
@@ -32,7 +39,7 @@
     height: 46em;   
 }
 .Header3 { 
-    background-image: url("../image/bg1.jpg" );
+    background-image: var(--main-bg-111);
     background-repeat: no-repeat;
     background-size: 100% 100% ;
     background-position: center;
@@ -40,7 +47,18 @@
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-    height: 46em;   
+    height: 55em;   
+}
+.Header4 { 
+    background-image: var(--main-bg-1);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    background-position: center;
+    max-width: 768px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50em;   
 }
 .shape1 {
     position: relative;
