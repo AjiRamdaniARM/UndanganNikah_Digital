@@ -16,7 +16,7 @@ export const Header3 = () => {
                 <div className='save-the-date-widget '>
                     <img style={{width:"100px"}} src={SaveTheDate} alt='saveTheDate'/>
                 </div>
-                <div className='TextData1-Widget p-3'>
+                <div className='TextData1-Widget w-full'>
                     <h1 style={{fontFamily: "font1"}} className='text-3xl text-pink-800'>Akad Nikah</h1>
                     {dataL && dataL.map(({Deadline, Waktu, LokasiAcara, WaktuResepsi}) =>(
                         <div style={{ fontWeight: "bold"}} className='widget-datajson m-2'>
@@ -24,7 +24,7 @@ export const Header3 = () => {
                             <h6>{Waktu}</h6>
                            <div className='mt-3'>
                             <h6 className=''> Lokasi Acara</h6>
-                            <p style={{fontFamily: "Montserrat", fontWeight: "normal" ,width: "290px", fontSize: "11px"}} className=' relative right-16'>{LokasiAcara}</p>
+                            <p style={{fontFamily: "Montserrat", fontWeight: "normal" , fontSize: "11px"}} className=' w-full lg:w-72'>{LokasiAcara}</p>
                             <ButtonMap />
 
                             <div className='container mt-10 lg:w-40 '>
@@ -42,7 +42,7 @@ export const Header3 = () => {
                 </div>
                 <div className='mt-3'>
                     <h6>Lokasi Acara</h6>
-                    <p style={{fontFamily: "Montserrat", fontWeight:"normal", width: "290px", fontSize: "11PX"}} className='relative right-16'>{LokasiAcara}</p>
+                    <p style={{fontFamily: "Montserrat", fontWeight:"normal", fontSize: "11PX"}} className='lg:w-72 w-full'>{LokasiAcara}</p>
                 </div>
                                 </div>
                                 <ButtonMap />

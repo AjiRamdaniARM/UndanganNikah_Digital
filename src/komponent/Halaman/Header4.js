@@ -11,14 +11,14 @@ export const Header4 = () => {
         fontSize: "20px"
     }
     return(
-        <div className='Header4 '>
+        <div id='Book' className='Header4 '>
             <center>
             <div className='p-14 lg:p-1'>
                 <div className='w-full'>
                     <h1 style={{fontFamily: "font1"}} className='text-5xl lg:text-3xl mt-16 text-pink-800 '>Galery</h1>
                 </div>
                 </div>
-                <div className='mt-10 lg:p-10 lg:mt-1 p-2 '>
+                <div className='mt-10 lg:p-10 lg:-mt-10 p-2 '>
                     <Carousel 
                     data={dataPoto}
                     time={9000}

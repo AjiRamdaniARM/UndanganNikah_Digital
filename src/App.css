@@ -23,6 +23,11 @@
   font-family: 'Montserrat';
   src: url(komponent/font/Montserrat-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: 'Crimson-Italic';
+  src: url(komponent/font/Crimson-Italic.ttf);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

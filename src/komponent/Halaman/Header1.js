@@ -27,8 +27,8 @@ class Header1 extends React.Component   {
               
               
             {dataL && dataL.map(({deskripsi1,Deadline}) => (
-            <div className='post p-5'>
-              <h2 style={{fontFamily: 'Montserrat-Bold', fontWeight: 'normal'}} className='title w-56  p-2 '>{deskripsi1}</h2>
+            <div className='post p-5 md:p-5'>
+              <h2 style={{fontFamily: 'Montserrat-Bold', fontWeight: 'normal'}} className='title w-56   '>{deskripsi1}</h2><br />
               <TimerDays />
               <p style={{fontFamily: "Montserrat-Bold", fontWeight: "normal"}} className='content p-2'>{Deadline}</p>
             </div>
